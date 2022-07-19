@@ -1,6 +1,5 @@
 // https://jsonplaceholder.typicode.com/todos
 
-
 // Constant 
 
 const GET_TODOS_REQUEST = 'GET_TODOS_REQUEST';
@@ -14,10 +13,18 @@ const initialTodosState = {
     error: null
 }
 
-
 // Action 
 const getTodosRequest = () => {
     return {
         type: GET_TODOS_REQUEST
     }
 }
+
+const getTodosFailed = (error) => {
+    return {
+        type: GET_TODOS_FAILED,
+        payload: error
+    }
+}
+
+
