@@ -13,3 +13,11 @@ const initialTodosState = {
     isLoading: false,
     error: null
 }
+
+
+// Action 
+const getTodosRequest = () => {
+    return {
+        type: GET_TODOS_REQUEST
+    }
+}
