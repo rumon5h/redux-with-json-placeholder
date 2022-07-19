@@ -27,4 +27,9 @@ const getTodosFailed = (error) => {
     }
 }
 
-
+const getToodosSuccess = (todos) => {
+    return {
+        type: GET_TODOS_SUCCESS,
+        payload: todos
+    }
+}
